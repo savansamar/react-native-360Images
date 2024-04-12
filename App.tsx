@@ -120,7 +120,8 @@
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 //@ts-ignorets-ignore
-import Move from './componenet/Move';
+import Move from './src/componenet/Move';
+import Image360View from './src/main/Image350View';
 
 const {width, height} = Dimensions.get('window');
 const images =[
@@ -164,10 +165,7 @@ const images =[
 
 const App = () => {
   return (
-    <View
-      style={{height: '100%', justifyContent: 'center', alignItems: 'center'}}>
-      <Move srcset={images} width={width} height={height / 2} />
-    </View>
+    <Image360View />
   );
 }
 
